@@ -8,19 +8,4 @@
     background-color: var(--bg-light, #f7f7f7); 
   }
 
-  @media (prefers-color-scheme: dark) {
-    .skill-card, .project-card, .experience-card {
-      background-color: var(--bg-dark, #2c2c2c); 
-      color: var(--text-dark, #fff); 
-    }
-  }
 
-  .skill-card h4, .project-card h4, .experience-card h4 {
-    color: var(--text-light, #333); 
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .skill-card h4, .project-card h4, .experience-card h4 {
-      color: var(--text-dark, #fff);
-    }
-  }
