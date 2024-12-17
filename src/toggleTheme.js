@@ -9,4 +9,4 @@ document.addEventListener('DOMContentLoaded', () => {
         htmlElement.setAttribute('data-theme', 'dark');
       }
     });
-  });
+});
