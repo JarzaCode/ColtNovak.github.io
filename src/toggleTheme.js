@@ -1,12 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement;
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+  
+    htmlElement.setAttribute('data-theme', currentTheme);
   
     themeToggleBtn.addEventListener('click', () => {
-      if (htmlElement.getAttribute('data-theme') === 'dark') {
-        htmlElement.setAttribute('data-theme', 'light');
-      } else {
-        htmlElement.setAttribute('data-theme', 'dark');
+      let newTheme = 'light';
+      if (htmlElement.getAttribute('data-theme') === 'light') {
+        newTheme = 'dark';
       }
+      htmlElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
     });
 });
