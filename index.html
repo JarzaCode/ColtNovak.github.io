@@ -8,38 +8,13 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css"/>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
-  <script src="script.js"></script>
-<script>
+x<script>
 
 </script>
 </head>
   
 <body>
-<script src="https://unpkg.com/scrollreveal">
-  
-   const sr = ScrollReveal({
-        origin: 'bottom',    
-        distance: '50px',    
-        duration: 1000,       
-        delay: 200,           
-        opacity: 0,           
-        scale: 0.8,           
-        easing: 'ease-out',   
-        reset: false,         
-    });
 
-    sr.reveal('.section', { interval: 300 }); 
-    sr.reveal('#intro', { interval: 300 });
-    sr.reveal('#skills', { interval: 300 });
-    sr.reveal('#projects', { interval: 300 });
-    sr.reveal('#experience', { interval: 300 });
-    sr.reveal('#contact', { interval: 300 });
-
-    sr.reveal('.skill-card', { interval: 100 });
-    sr.reveal('.project-card', { interval: 100 });
-    sr.reveal('.experience-card', { interval: 100 });
-
-</script>
 
   <div class="fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600">
     <div class="grid h-full max-w-lg grid-cols-5 mx-auto">
@@ -186,27 +161,32 @@
   <div class="text-center mt-8">
     <a href="mailto:coltnovak09@gmail.com" class="btn btn-primary">Contact me!</a>
   </div>
+  <script src="https://unpkg.com/scrollreveal">
   
-  
-<div class="fixed top-4 right-4">
-  <button id="theme-toggle" class="btn btn-primary">Toggle Theme</button>
-</div>
-<script>
-  
-  document.addEventListener('DOMContentLoaded', () => {
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const currentTheme = localStorage.getItem('theme') || 'dark';
-
-    document.documentElement.setAttribute('data-theme', currentTheme);
-
-    themeToggleBtn.addEventListener('click', () => {
-      const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
+   const sr = ScrollReveal({
+        origin: 'bottom',    
+        distance: '50px',    
+        duration: 1000,       
+        delay: 200,           
+        opacity: 0,           
+        scale: 0.8,           
+        easing: 'ease-out',   
+        reset: false,         
     });
-  });
+
+    sr.reveal('.section', { interval: 300 }); 
+    sr.reveal('#intro', { interval: 300 });
+    sr.reveal('#skills', { interval: 300 });
+    sr.reveal('#projects', { interval: 300 });
+    sr.reveal('#experience', { interval: 300 });
+    sr.reveal('#contact', { interval: 300 });
+
+    sr.reveal('.skill-card', { interval: 100 });
+    sr.reveal('.project-card', { interval: 100 });
+    sr.reveal('.experience-card', { interval: 100 });
 
 </script>
+
   
 
 </body>
